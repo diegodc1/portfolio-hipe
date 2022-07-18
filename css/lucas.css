@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 100vw;
+    background-color: #252627;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 2rem;
+    padding: 2rem 5rem;
+}
+
+.bg-color header {
+    background-color: #FB5B0F;
+    width: 24.4rem;
+}
+
+header img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+header ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    background: rgb(251,91,15);
+    background: linear-gradient(0deg, rgba(251,91,15,1) 0%, rgba(37,38,39,1) 59%);
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+}
+
+header li:hover {
+    cursor: pointer;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+main {
+    display: flex;
+    width: 90vw;
+}
+
+.perfil-img {
+    width: 60%;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.text-infos {
+    width: 60%;
+}
+
+.bg-color {
+    background-color: #FB5B0F;
+    width: 30rem;
+    height: 50rem;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.perfil-img {
+    z-index: 10;
+    border-radius: 10px;
+    box-shadow: 0.1px 0.1px 0.1px 0.1px black;
+}
+
+.text-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 0rem 30rem 0rem 0rem;
+    gap: 1rem;
+}
+
+.text-infos h1 {
+    font-size: 3rem;
+}
+
+.text-infos span {
+    color: #FB5B0F;
+    animation: anime 3s infinite alternate-reverse;
+}
+
+@keyframes anime {
+    from{color: #FB5B0F;}
+    to {color:  grey}
+}
+
+.text-infos p {
+    font-size: 1.2rem;
+    font-weight: 1.6;
+}
+
+.foto {
+    width: 30rem;
+    height: 35rem;
+}
+
+footer p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    left: 0;
+    margin-bottom: 1rem;
+    margin-left: 50rem;
+    z-index: 10;
+    bottom: 0;
+    opacity: 50%;
+    animation: abulele 0.5s infinite alternate;
+    }
+    
+@keyframes abulele {
+    from{color: grey;}
+    to {color: yellow;}
+}
+
+.section2 img {
+float: right;
+width: 200px;
+height: 200PX;
+display: flex;
+justify-content: center;
+position: relative;
+top: 50%;
+transform: translatey(-50%);
+}
+
+.section2 {
+width: 20px;
+}
